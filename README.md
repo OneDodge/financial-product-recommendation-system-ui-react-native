@@ -1,5 +1,11 @@
-# Sample Snack app
+# financial-product-recommendation-system-ui-react-native
 
+This is a sample mobile project demonstraing how to improve sales by leveraging Recommendation System 
+
+## Backend Server
+If you want to get hold of the latest Backend please visit [Financial Product Recommendation System](https://github.com/OneDodge/financial-product-recommendation-system)
+
+```
 Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by clicking the **Run** button or use the simulator by clicking **Tap to Play**. When you're done, click **Save** and share the link!
 
 When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Export** your project and use it with [expo-cli](https://docs.expo.io/versions/latest/introduction/installation.html).
@@ -9,6 +15,7 @@ All projects created in Snack are publicly available, so you can easily share th
 If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.io).
 
 Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack-web).
+```
 
 ### Home Screen
 ![Image of Product Recommendation API](api-doc/home_screen.png)
