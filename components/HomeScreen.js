@@ -10,6 +10,8 @@ export default function HomeScreen() {
   const [isLoading, setLoading] = React.useState(true);
   const [data, setData] = React.useState([]);
 
+  var list = ['AAPL', 'TSLA', 'AMZN'];
+
   React.useEffect(() => {
     fetch('https://reactnative.dev/movies.json')
       .then((response) => response.json())
