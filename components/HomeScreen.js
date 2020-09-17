@@ -10,7 +10,7 @@ const logo = {
   height: 64
 };
 
-export default function AssetExample() {
+export default function HomeScreen() {
   return (
     <ScrollView>
       <Appbar.Header></Appbar.Header>
