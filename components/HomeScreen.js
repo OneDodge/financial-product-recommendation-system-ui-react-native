@@ -21,7 +21,7 @@ export default function HomeScreen() {
   return (
     <View style={styles.container}>
       <ScrollView>
-        <Text>ScrollView child component.</Text>
+        <Text>ScrollView child component</Text>
       </ScrollView>
     </View>
   );
@@ -34,5 +34,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingTop: '1000',
     backgroundColor: '#ecf0f1',
+    width: '100%'
   }
 });
