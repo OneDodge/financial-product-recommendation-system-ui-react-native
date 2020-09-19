@@ -129,18 +129,18 @@ export default function HomeScreen() {
                       fontWeight: "bold"
                     }}>
                       NASDAQ
-              </Text>
+                        </Text>
                     <Text style={{ color: prs.gainloss < 0 ? "red" : "green" }}>
                       {prs.gainloss} ({prs.gainlossPercentage}%)
-              </Text>
+                        </Text>
                   </View>
                   <View>
                     <Text>
                       1 Friends Holding
-              </Text>
+                        </Text>
                     <Text>
                       1 Friends Following
-              </Text>
+                        </Text>
                   </View>
                 </View>
               </View>
