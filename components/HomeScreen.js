@@ -172,7 +172,7 @@ export default function HomeScreen() {
                         borderBottomLeftRadius: 20,
                         borderBottomRightRadius: 20,
                         paddingLeft: "10%",
-                        paddingRight: "7%",
+                        paddingRight: "10%",
                         paddingTop: "1%",
                         paddingBottom: "1%",
                         marginTop: "1%",
@@ -184,15 +184,15 @@ export default function HomeScreen() {
                           fontSize: "12",
                           fontWeight: "bold"
                         }}>
-                          1
-                            </Text>
+                          {prs.friendsFollowing}
+                        </Text>
                       </View>
                       <Text style={{
                         fontSize: "12",
                         fontWeight: "bold",
                         color: "white"
                       }}>
-                        Friends Holding
+                        Friends Following
                           </Text>
                     </View>
                     <View style={{
@@ -201,8 +201,8 @@ export default function HomeScreen() {
                       borderTopRightRadius: 20,
                       borderBottomLeftRadius: 20,
                       borderBottomRightRadius: 20,
-                      paddingLeft: "2%",
-                      paddingRight: "2%",
+                      paddingLeft: "3%",
+                      paddingRight: "3%",
                       paddingTop: "1%",
                       paddingBottom: "1%",
                       marginTop: "1%",
@@ -232,8 +232,8 @@ export default function HomeScreen() {
                           fontSize: "12",
                           fontWeight: "bold"
                         }}>
-                          1
-                            </Text>
+                          {prs.friendsHolding}
+                        </Text>
                       </View>
                       <Text style={{
                         fontSize: "12",
