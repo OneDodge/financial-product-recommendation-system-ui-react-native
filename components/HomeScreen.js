@@ -54,6 +54,16 @@ export default function HomeScreen() {
       friendsFollowing: 29,
       friendsHolding: 18
     },
+    {
+      name: "MSFT",
+      maketName: "NASDAQ",
+      ccy: "USD",
+      price: 200.39,
+      gainloss: +20,
+      gainlossPercentage: 2.2,
+      friendsFollowing: 239,
+      friendsHolding: 18
+    }
   ];
 
   // React.useEffect(() => {
@@ -134,13 +144,105 @@ export default function HomeScreen() {
                       {prs.gainloss} ({prs.gainlossPercentage}%)
                         </Text>
                   </View>
-                  <View>
-                    <Text>
-                      1 Friends Holding
-                        </Text>
-                    <Text>
-                      1 Friends Following
-                        </Text>
+                  <View style={{
+                    alignItems: "flex-end"
+                  }}>
+                    <View style={{
+                      backgroundColor: "green",
+                      borderTopLeftRadius: 20,
+                      borderTopRightRadius: 20,
+                      borderBottomLeftRadius: 20,
+                      borderBottomRightRadius: 20,
+                      paddingLeft: "3%",
+                      paddingRight: "3%",
+                      paddingTop: "1%",
+                      paddingBottom: "1%",
+                      marginTop: "1%",
+                      marginLeft: "1%",
+                      marginRight: "1%",
+                      marginBottom: "1%",
+                      flex: 1,
+                      flexDirection: 'row',
+                      alignItems: 'center',
+                    }}>
+                      <View style={{
+                        backgroundColor: "white",
+                        borderTopLeftRadius: 20,
+                        borderTopRightRadius: 20,
+                        borderBottomLeftRadius: 20,
+                        borderBottomRightRadius: 20,
+                        paddingLeft: "4%",
+                        paddingRight: "4%",
+                        paddingTop: "1%",
+                        paddingBottom: "1%",
+                        marginTop: "1%",
+                        marginLeft: "1%",
+                        marginRight: "1%",
+                        marginBottom: "1%",
+                      }}>
+                        <Text style={{
+                          fontSize: "12",
+                          fontWeight: "bold"
+                        }}>
+                          1
+                            </Text>
+                      </View>
+                      <Text style={{
+                        fontSize: "12",
+                        fontWeight: "bold",
+                        color: "white"
+                      }}>
+                        Friends Holding
+                          </Text>
+                    </View>
+                    <View style={{
+                      backgroundColor: "green",
+                      borderTopLeftRadius: 20,
+                      borderTopRightRadius: 20,
+                      borderBottomLeftRadius: 20,
+                      borderBottomRightRadius: 20,
+                      paddingLeft: "2%",
+                      paddingRight: "2%",
+                      paddingTop: "1%",
+                      paddingBottom: "1%",
+                      marginTop: "1%",
+                      marginLeft: "1%",
+                      marginRight: "1%",
+                      marginBottom: "1%",
+                      flex: 1,
+                      flexDirection: 'row',
+                      alignItems: 'center',
+                    }}>
+                      <View style={{
+                        backgroundColor: "white",
+                        borderTopLeftRadius: 20,
+                        borderTopRightRadius: 20,
+                        borderBottomLeftRadius: 20,
+                        borderBottomRightRadius: 20,
+                        paddingLeft: "4%",
+                        paddingRight: "4%",
+                        paddingTop: "1%",
+                        paddingBottom: "1%",
+                        marginTop: "1%",
+                        marginLeft: "1%",
+                        marginRight: "1%",
+                        marginBottom: "1%",
+                      }}>
+                        <Text style={{
+                          fontSize: "12",
+                          fontWeight: "bold"
+                        }}>
+                          1
+                            </Text>
+                      </View>
+                      <Text style={{
+                        fontSize: "12",
+                        fontWeight: "bold",
+                        color: "white"
+                      }}>
+                        Friends Holding
+                          </Text>
+                    </View>
                   </View>
                 </View>
               </View>
