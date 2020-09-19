@@ -23,7 +23,38 @@ export default function HomeScreen() {
     wait(2000).then(() => setRefreshing(false));
   }, []);
 
-  var list = ['AAPL', 'TSLA', 'AMZN'];
+  var productsRecommendation = [
+    {
+      name: "AAPL",
+      maketName: "NASDAQ",
+      ccy: "USD",
+      price: 121,
+      gainloss: -12,
+      gainlossPercentage: 1.2,
+      friendsFollowing: 10,
+      friendsHolding: 15
+    },
+    {
+      name: "TSLA",
+      maketName: "NASDAQ",
+      ccy: "USD",
+      price: 451,
+      gainloss: +12,
+      gainlossPercentage: 1.2,
+      friendsFollowing: 26,
+      friendsHolding: 18
+    },
+    {
+      name: "AMZN",
+      maketName: "NASDAQ",
+      ccy: "USD",
+      price: 3407,
+      gainloss: +120,
+      gainlossPercentage: 10.2,
+      friendsFollowing: 29,
+      friendsHolding: 18
+    },
+  ];
 
   // React.useEffect(() => {
   //   fetch('https://reactnative.dev/movies.json')
@@ -59,358 +90,64 @@ export default function HomeScreen() {
           }}>
             WOWch List</Text>
         </View>
-        <View style={styles.top}>
-          <View style={{
-            paddingLeft: "3%",
-            paddingRight: "3%",
-            paddingTop: "3%",
-            paddingBottom: "3%"
 
-          }}>
-            <View style={{
-              flex: 1,
-              flexDirection: 'row',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-            }}>
-              <Text style={{
-                fontSize: "35",
-                fontWeight: "bold"
-              }}>
-                U4095
+        {
+          productsRecommendation.map(prs => {
+            return (
+              <View style={styles.top}>
+                <View style={{
+                  paddingLeft: "3%",
+                  paddingRight: "3%",
+                  paddingTop: "3%",
+                  paddingBottom: "3%"
+
+                }}>
+                  <View style={{
+                    flex: 1,
+                    flexDirection: 'row',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                  }}>
+                    <Text style={{
+                      fontSize: "35",
+                      fontWeight: "bold"
+                    }}>
+                      {prs.name}
+                    </Text>
+                    <Text>
+                      {prs.price} {prs.ccy}
+                    </Text>
+                  </View>
+                  <View style={{
+                    flex: 1,
+                    flexDirection: 'row',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                  }}>
+                    <Text style={{
+                      fontSize: "15",
+                      fontWeight: "bold"
+                    }}>
+                      NASDAQ
               </Text>
-              <Text>
-                121.0 USD
+                    <Text style={{ color: prs.gainloss < 0 ? "red" : "green" }}>
+                      {prs.gainloss} ({prs.gainlossPercentage}%)
               </Text>
-            </View>
-
-            <View style={{
-              flex: 1,
-              flexDirection: 'row',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-            }}>
-              <Text style={{
-                fontSize: "15",
-                fontWeight: "bold"
-              }}>
-                NASDAQ
+                  </View>
+                  <View>
+                    <Text>
+                      1 Friends Holding
               </Text>
-              <Text style={{ color: "red" }}>
-                -12.0 (1.2%)
+                    <Text>
+                      1 Friends Following
               </Text>
-            </View>
-            <View>
-              <Text>
-                1 Friends Holding
-              </Text>
-              <Text>
-                1 Friends Following
-              </Text>
-            </View>
-          </View>
-        </View>
-        <View style={styles.top}>
-          <View style={{
-            paddingLeft: "3%",
-            paddingRight: "3%",
-            paddingTop: "3%",
-            paddingBottom: "3%"
-
-          }}>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-          </View>
-        </View><View style={styles.top}>
-          <View style={{
-            paddingLeft: "3%",
-            paddingRight: "3%",
-            paddingTop: "3%",
-            paddingBottom: "3%"
-
-          }}>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-          </View>
-        </View><View style={styles.top}>
-          <View style={{
-            paddingLeft: "3%",
-            paddingRight: "3%",
-            paddingTop: "3%",
-            paddingBottom: "3%"
-
-          }}>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-          </View>
-        </View><View style={styles.top}>
-          <View style={{
-            paddingLeft: "3%",
-            paddingRight: "3%",
-            paddingTop: "3%",
-            paddingBottom: "3%"
-
-          }}>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-          </View>
-        </View><View style={styles.top}>
-          <View style={{
-            paddingLeft: "3%",
-            paddingRight: "3%",
-            paddingTop: "3%",
-            paddingBottom: "3%"
-
-          }}>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-          </View>
-        </View><View style={styles.top}>
-          <View style={{
-            paddingLeft: "3%",
-            paddingRight: "3%",
-            paddingTop: "3%",
-            paddingBottom: "3%"
-
-          }}>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-          </View>
-        </View><View style={styles.top}>
-          <View style={{
-            paddingLeft: "3%",
-            paddingRight: "3%",
-            paddingTop: "3%",
-            paddingBottom: "3%"
-
-          }}>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-          </View>
-        </View><View style={styles.top}>
-          <View style={{
-            paddingLeft: "3%",
-            paddingRight: "3%",
-            paddingTop: "3%",
-            paddingBottom: "3%"
-
-          }}>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-          </View>
-        </View><View style={styles.top}>
-          <View style={{
-            paddingLeft: "3%",
-            paddingRight: "3%",
-            paddingTop: "3%",
-            paddingBottom: "3%"
-
-          }}>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-          </View>
-        </View><View style={styles.top}>
-          <View style={{
-            paddingLeft: "3%",
-            paddingRight: "3%",
-            paddingTop: "3%",
-            paddingBottom: "3%"
-
-          }}>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-            <Text>
-              ffffasadasda
-            </Text>
-          </View>
-        </View>
+                  </View>
+                </View>
+              </View>
+            );
+          }
+          )
+        }
       </ScrollView>
     </View>
   );
